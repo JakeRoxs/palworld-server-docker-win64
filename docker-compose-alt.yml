@@ -1,7 +1,7 @@
 services:
-  palworld:
+  palworld-proton:
     build: ./docker
-    container_name: pps
+    container_name: palworld-proton
     image: palworld-proton
     stop_grace_period: 1s       # PALWORLD_GRACEPERIOD
     restart: unless-stopped     # PALWORLD_RESTARTTYPE
