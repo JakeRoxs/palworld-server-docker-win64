@@ -126,14 +126,4 @@ services:
       # When enabled, will automatically apply a temporary fix for ue4ss v3.0.0 and v3.0.1
       # by replacing the BPModLoaderMod script's main.lua file. 
       TEMP_UE4SS_FIX: "true"
-
-    volumes:
-      # Mount directories for storing logs & backups
-      - ./data/logs:/app/logs 
-      - ./data/backups:/app/backups
-      - ./data/logs/steam:/home/steam/.steam/steam/logs  # Add Steam logs
-      # Mount the actual game server folder
-      - ./data/palworld:/app/PalServer
-      # Additional mounts for system ID & time synchronization
-      - /etc/machine-id:/etc/machine-id:ro
-      - /etc/localtime:/etc/localtime:ro
+      
